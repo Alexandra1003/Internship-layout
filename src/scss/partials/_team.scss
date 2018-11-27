@@ -1,0 +1,28 @@
+.team {
+    background-color: #e7f1f8;
+    color: #3c4761;
+  }
+  
+  .team-content {
+    @include container-inline-4(#27283d);
+    .circle {
+        width: 0px;
+        height: 0px;
+        border: 100px solid #878787;
+        border-radius: 100px;
+        margin: auto;
+    }
+  }
+  
+  .text {
+      @include header();
+  }
+  
+  .description {
+      @include header-desc();
+  }
+  
+  .line {
+      @include header-line(#bdd1df);
+  }
+  

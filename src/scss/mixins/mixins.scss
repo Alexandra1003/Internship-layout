@@ -1,0 +1,52 @@
+@mixin header {
+        text-align: center;
+        margin-bottom: 80px;
+        h1 {
+          font-size: 40px;
+        }
+  }
+
+@mixin header-line($color) {
+        width: 87px;
+        height: 5px;
+        background-color: $color;
+        margin: auto;
+        margin-bottom: 25px;
+  }
+
+@mixin header-desc {
+        font-size: 18px;
+        width: 580px;
+        margin: auto;
+  }
+
+@mixin container-inline-4($color) {
+  text-align: center;
+  float: left;
+  width: 260px;
+  margin: 0 10px;
+  img {
+    max-height: 125px;
+    margin-bottom: 40px;
+  }
+  h1 {
+    font-size: 24px;
+    color: $color;
+  }
+  h2 {
+    font-size: 16px;
+    color: #48c1e9;
+  }
+  p {
+    font-size: 18px;
+  }
+}
+
+
+  .services-container {
+   
+  }
+
+  .services-content {
+
+  }

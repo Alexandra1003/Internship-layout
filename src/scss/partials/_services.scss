@@ -1,0 +1,20 @@
+.services {
+  background-color: #17c2a4;
+  color: #fff;
+}
+
+.services-content {
+    @include container-inline-4(#fff);
+  }
+
+.text {
+    @include header;
+}
+
+.description {
+    @include header-desc;
+}
+
+.line {
+    @include header-line(#14a58c);
+}

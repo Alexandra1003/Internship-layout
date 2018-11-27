@@ -11,31 +11,31 @@
 
   <link href="//www.google-analytics.com" rel="dns-prefetch">
   <link href="//ajax.googleapis.com" rel="dns-prefetch">
-  <link href="assets/css/style.min.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
 
   <script src="assets/components/modernizr/modernizr.js"></script>
 </head>
 
 <body>
 
-  <header class="header" role="banner">
-    <div class="logo">
-      <a href="/">
-        <img src="assets/img/logo.png" alt="Logo">
-      </a>
-    </div>
-    <nav class="nav" role="navigation">
-      <ul>
-        <li>
-          <a href="/"></a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-
   <main class="main" role="main">
 
-    <div>Part1</div>
+    <div class="container">
+      <div class="logo">
+        <img src="./images/logo.png" alt="">
+      </div>
+      <div class="panel">
+        <div>HOME</div>
+        <div>ABOUT</div>
+        <div>WORK</div>
+        <div>BLOG</div>
+        <div>CONTACT</div>
+      </div>
+      <div class="welcome-text">Hi there! We are the new kids on the block and we build awesome websites and mobile apps.</div>
+      <div class="welcome-button-wrapper">
+        <button class="welcome-button">WORK WITH US!</button>
+      </div>
+    </div>
     <div>Part2</div>
     <div>Part3</div>
     <div>Part4</div>
@@ -44,22 +44,14 @@
     <div>Part7</div>
   </main>
 
-  <aside class="sidebar" role="complementary">
-
-  </aside>
-
-  <footer class="footer" role="contentinfo">
-
-  </footer>
-
   <script src="assets/components/jquery/jquery.min.js"></script>
   <script src="assets/js/scripts.min.js"></script>
 
   <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
   <script>
     (function (b, o, i, l, e, r) {
-    b.GoogleAnalyticsObject = l; b[l] || (b[l] =
-      function () { (b[l].q = b[l].q || []).push(arguments) }); b[l].l = +new Date;
+      b.GoogleAnalyticsObject = l; b[l] || (b[l] =
+        function () { (b[l].q = b[l].q || []).push(arguments) }); b[l].l = +new Date;
       e = o.createElement(i); r = o.getElementsByTagName(i)[0];
       e.src = '//www.google-analytics.com/analytics.js';
       r.parentNode.insertBefore(e, r)

@@ -1,27 +1,23 @@
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1200px) and (max-width: 1500px) {
     .container {
-      height: 600px;
       max-width: 1140px;
     }
   }
   
   @media only screen and (min-width: 992px) and (max-width: 1199px) {
     .container {
-      height: 600px;
       max-width: 960px;
     }
   }
   
   @media (min-width: 768px) and (max-width: 991px) {
     .container {
-      height: 600px;
       max-width: 720px;
     }
   }
   
   @media (min-width: 576px) and (max-width: 767px) {
     .container {
-      height: 600px;
       max-width: 540px;  
     }
   }

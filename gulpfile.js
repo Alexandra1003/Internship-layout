@@ -38,6 +38,24 @@ gulp.task('css', function () {
     .pipe(browserSync.reload({stream:true}));
 });
 
+var faSourceDir = "font-awesome-4.7.0";
+var faDestDir = "app/assets/font-awesome";
+
+gulp.task('font-awesome', function () {
+    gulp.src(faSourceDir+'/fonts/**/*').pipe(gulp.dest(faDestDir+'/fonts/')); 
+    return gulp.src(faSourceDir+'/scss/font-awesome.scss') 
+    .pipe(sourcemaps.init())
+    .pipe(sass().on('error', sass.logError))
+    .pipe(autoprefixer('last 4 version'))
+    .pipe(gulp.dest(faDestDir+'/css')) 
+    .pipe(cssnano())
+    .pipe(rename({ suffix: '.min' }))
+    .pipe(header(banner, { package : package }))
+    .pipe(sourcemaps.write())
+    .pipe(gulp.dest(faDestDir+'/css')) 
+    .pipe(browserSync.reload({stream:true}));
+});
+
 gulp.task('js',function(){
   gulp.src('src/js/scripts.js')
     .pipe(sourcemaps.init())
@@ -65,7 +83,7 @@ gulp.task('bs-reload', function () {
     browserSync.reload();
 });
 
-gulp.task('default', ['css', 'js', 'browser-sync'], function () {
+gulp.task('default', ['css', 'font-awesome', 'js', 'browser-sync'], function () {
     gulp.watch("src/scss/**/*.scss", ['css']);
     gulp.watch("src/js/*.js", ['js']);
     gulp.watch("app/*.html", ['bs-reload']);

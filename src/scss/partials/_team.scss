@@ -6,23 +6,38 @@
   .team-content {
     @include container-inline-4(#27283d);
     .circle {
-        width: 0px;
-        height: 0px;
-        border: 100px solid #878787;
-        border-radius: 100px;
-        margin: auto;
+        @include circle(100px, #878787); 
+    }
+    .team-icons {
+        .circle-min {
+            position: relative;
+            display: inline-block;
+            width: 0px;
+            height: 0px;
+            border: 17px solid #bdd1df;
+            border-radius: 17px;
+            margin: auto;
+            .fa {
+                color: #fff;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                margin-right: -50%;
+                transform: translate(-50%, -50%)
+            }
+        }
     }
   }
   
-  .text {
+  .team-header {
       @include header();
   }
   
-  .description {
+  .team-description {
       @include header-desc();
   }
   
-  .line {
+  .team-line {
       @include header-line(#bdd1df);
   }
   

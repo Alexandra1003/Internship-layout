@@ -5,16 +5,17 @@
 
 .services-content {
     @include container-inline-4(#fff);
+    
   }
 
-.text {
+.services-header {
     @include header;
 }
 
-.description {
+.services-description {
     @include header-desc;
 }
 
-.line {
+.services-line {
     @include header-line(#14a58c);
 }

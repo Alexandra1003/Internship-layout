@@ -1,0 +1,59 @@
+.skills {
+    background-color: #fff;
+    color: #3c4761;
+  }
+  
+  .skills-content {
+    @include container-inline-4(#27283d);
+    color: #a4a9b5;
+        .first {
+            @include circle(80px, #30bae7);
+            .circle-sector {
+                @include circle-segment(90deg, 50deg);
+            }
+        } 
+        .second {
+            @include circle(80px, #d74680);
+            .circle-sector {
+                @include circle-segment(90deg, 0deg);
+            }
+        } 
+        .third {
+            @include circle(80px, #15c7a8);
+            .circle-sector {
+                @include circle-segment(90deg, 50deg);
+            }
+        } 
+        .fourth {
+            @include circle(80px, #eb7d4b);
+            .circle-sector {
+                @include circle-segment(90deg, 50deg);
+            }
+        } 
+        
+        .circle-center {
+            @include circle-center(70px, #fff); 
+        }
+        span {
+            font-size: 50px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-right: -50%;
+            transform: translate(-50%, -50%)
+        }
+  }
+  
+  .skills-header {
+      @include header();
+      color: #3c4761;
+  }
+  
+  .skills-description {
+      @include header-desc();
+  }
+  
+  .skills-line {
+      @include header-line(#dfe8ed);
+  }
+  

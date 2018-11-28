@@ -3,6 +3,7 @@
         margin-bottom: 80px;
         h1 {
           font-size: 40px;
+          text-transform: uppercase;
         }
   }
 
@@ -23,7 +24,7 @@
 @mixin container-inline-4($color) {
   text-align: center;
   float: left;
-  width: 260px;
+  width: 23%;
   margin: 0 10px;
   img {
     max-height: 125px;
@@ -42,11 +43,72 @@
   }
 }
 
+@mixin circle($radius, $color) {
+  width: 0px;
+  height: 0px;
+  border: $radius solid $color;
+  border-radius: $radius;
+  margin: auto;
+  position: relative;
+}
 
-  .services-container {
-   
+@mixin circle-center($radius, $color) {
+  width: 0px;
+  border: $radius solid $color;
+  height: 0px;
+  border-radius: $radius;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin circle-segment($deg1, $deg2) {
+  border-radius: 100%;
+  width: 161px;
+  height: 161px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  background-image:
+  linear-gradient($deg1, transparent 50%, #dfe8ed 50%),
+  linear-gradient($deg2, #dfe8ed 50%, transparent 50%);
+}
+
+@mixin panel($color1, $color2, $color3) {
+  float: right;
+  vertical-align: middle;
+  div {
+    display: inline-block;
+    background-color: $color1;
+    text-align: center;
+    vertical-align: middle;
+    color: $color3;
+    font-size: 16px;
+    width: 75px;
+    height: 35px;
+    cursor: pointer;
+    line-height: 35px;
+    &:hover{
+      background-color: $color2;
+    }
   }
+}
 
-  .services-content {
-
-  }
+@mixin button ($color1, $color2) {
+  display: inline-block;
+  height: 75px;
+  width: 295px;
+  background-color: $color1;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0px 5px $color2;
+  cursor: pointer;
+  margin: auto;
+  margin-top: 60px;
+}

@@ -64,7 +64,7 @@
   transform: translate(-50%, -50%);
 }
 
-@mixin circle-segment($deg1, $deg2) {
+@mixin circle-segment($color, $deg1, $deg2) {
   border-radius: 100%;
   width: 161px;
   height: 161px;
@@ -74,8 +74,8 @@
   margin-right: -50%;
   transform: translate(-50%, -50%);
   background-image:
-  linear-gradient($deg1, transparent 50%, #dfe8ed 50%),
-  linear-gradient($deg2, #dfe8ed 50%, transparent 50%);
+  linear-gradient($deg1, transparent 50%, $color 50%),
+  linear-gradient($deg2, $color 50%, transparent 50%);
 }
 
 @mixin panel($color1, $color2, $color3) {
@@ -92,7 +92,7 @@
     cursor: pointer;
     line-height: 35px;
     padding: 10px;
-    &:hover{
+    &:hover, &:active, &:visited{
       background-color: $color2;
       padding: 10px;
     }

@@ -7,27 +7,27 @@
     @include container-inline-4(#27283d);
     color: #a4a9b5;
         .first {
-            @include circle(80px, #30bae7);
+            @include circle(80px, #a4a9b5);
             .circle-sector {
-                @include circle-segment(90deg, 50deg);
+                @include circle-segment(#30bae7, 90deg, 50deg);
             }
         } 
         .second {
-            @include circle(80px, #d74680);
+            @include circle(80px, #a4a9b5);
             .circle-sector {
-                @include circle-segment(90deg, 0deg);
+                @include circle-segment(#d74680, 90deg, 0deg);
             }
         } 
         .third {
-            @include circle(80px, #15c7a8);
+            @include circle(80px, #a4a9b5);
             .circle-sector {
-                @include circle-segment(90deg, 50deg);
+                @include circle-segment(#15c7a8, 90deg, -40deg);
             }
         } 
         .fourth {
-            @include circle(80px, #eb7d4b);
+            @include circle(80px, #a4a9b5);
             .circle-sector {
-                @include circle-segment(90deg, 50deg);
+                @include circle-segment(#eb7d4b, 90deg, 40deg);
             }
         } 
         

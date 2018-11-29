@@ -39,4 +39,6 @@ ehthumbs.db
 Desktop.ini
 $RECYCLE.BIN/
 
-assets/*
+app/assets
+/app/assets/css/style.css
+/app/assets/css/style.min.css

@@ -12,6 +12,10 @@
 
 .panel{
   @include panel(#87509c, #643a79, #fff);
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
   }
   
 .logo {

@@ -20,18 +20,20 @@
     float: none;
     text-align: center;
     padding-bottom: 60px;
+    a {
+        color: #fff;
+        text-decoration: none;
+    }
     }
 
 .portfolio-content {
     .portfolio-img-wrapper {
-        float: left;
         padding: 8px;
         img {
             display: inline-block;
-            width: 500px;
             margin-bottom: 30px;
         }
-        div {
+        .portfolio-img-text {
             font-size: 18px;
             text-align: center;
             text-transform: uppercase;

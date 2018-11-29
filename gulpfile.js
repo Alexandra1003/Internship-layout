@@ -38,10 +38,16 @@ gulp.task('css', function () {
     .pipe(browserSync.reload({stream:true}));
 });
 
-var faSourceDir = "font-awesome-4.7.0";
-var faDestDir = "app/assets/font-awesome";
+var faSourceDir = "fonts/font-awesome-4.7.0";
+var faDestDir = "app/assets/fonts/font-awesome";
 
-gulp.task('font-awesome', function () {
+var ttSourceDir = "fonts/Titillium";
+var ttDestDir = "app/assets/fonts/Titillium";
+
+gulp.task('fonts', function () {
+    // titilium
+    gulp.src(ttSourceDir +'/**/*').pipe(gulp.dest(ttDestDir+'/'));
+    //font-awesome
     gulp.src(faSourceDir+'/fonts/**/*').pipe(gulp.dest(faDestDir+'/fonts/')); 
     return gulp.src(faSourceDir+'/scss/font-awesome.scss') 
     .pipe(sourcemaps.init())
@@ -83,7 +89,7 @@ gulp.task('bs-reload', function () {
     browserSync.reload();
 });
 
-gulp.task('default', ['css', 'font-awesome', 'js', 'browser-sync'], function () {
+gulp.task('default', ['css', 'fonts', 'js', 'browser-sync'], function () {
     gulp.watch("src/scss/**/*.scss", ['css']);
     gulp.watch("src/js/*.js", ['js']);
     gulp.watch("app/*.html", ['bs-reload']);

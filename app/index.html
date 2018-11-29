@@ -11,7 +11,7 @@
 
   <link href="//www.google-analytics.com" rel="dns-prefetch">
   <link href="//ajax.googleapis.com" rel="dns-prefetch">
-  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/style.min.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="./assets/font-awesome/css/font-awesome.min.css">
 
   <script src="assets/components/modernizr/modernizr.js"></script>
@@ -21,16 +21,32 @@
 
   <main class="main" role="main">
 
-    <div class="container welcome">
+    <div class="container welcome" id="home">
       <div class="logo">
         <img src="./images/logo.png" alt="">
       </div>
-      <div class="panel">
-        <div>HOME</div>
-        <div>ABOUT</div>
-        <div>WORK</div>
-        <div>BLOG</div>
-        <div>CONTACT</div>
+      <nav class="panel">
+        <div>
+          <a href="#home">HOME</a>
+        </div>
+        <div>
+          <a href="#about">ABOUT</a>
+        </div>
+        <div>
+          <a href="#work">WORK</a>
+        </div>
+        <div>
+          <a href="#blog">BLOG</a>
+        </div>
+        <div>
+          <a href="#contact">CONTACT</a>
+        </div>
+
+      </nav>
+      <div class="welcome-hidden-menu">
+        <div></div>
+        <div></div>
+        <div></div>
       </div>
       <div class="welcome-text">Hi there! We are the new kids on the block and we build awesome websites and mobile apps.</div>
       <div class="welcome-button-wrapper">
@@ -39,7 +55,7 @@
     </div>
 
 
-    <div class="container services clear">
+    <div class="container services clear" id="about">
       <div class="services-header">
         <h1>SERVICES WE PROVIDE</h1>
         <div class="services-line"></div>
@@ -90,16 +106,24 @@
           <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.</p>
           <div class="team-icons">
             <div class="circle-min">
-              <i class="fa fa-facebook" aria-hidden="true"></i>
+              <a href="#">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+              </a>
             </div>
             <div class="circle-min">
-              <i class="fa fa-twitter" aria-hidden="true"></i>
+              <a href="#">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+              </a>
             </div>
             <div class="circle-min">
-              <i class="fa fa-linkedin" aria-hidden="true"></i>
+              <a href="#">
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+              </a>
             </div>
             <div class="circle-min">
-              <i class="fa fa-envelope" aria-hidden="true"></i>
+              <a href="#">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+              </a>
             </div>
           </div>
         </div>
@@ -111,13 +135,19 @@
           <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.</p>
           <div class="team-icons">
             <div class="circle-min">
-              <i class="fa fa-twitter" aria-hidden="true"></i>
+              <a href="#">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+              </a>
             </div>
             <div class="circle-min">
-              <i class="fa fa-linkedin" aria-hidden="true"></i>
+              <a href="#">
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+              </a>
             </div>
             <div class="circle-min">
-              <i class="fa fa-envelope" aria-hidden="true"></i>
+              <a href="#">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+              </a>
             </div>
           </div>
         </div>
@@ -129,16 +159,24 @@
           <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.</p>
           <div class="team-icons">
             <div class="circle-min">
-              <i class="fa fa-facebook" aria-hidden="true"></i>
+              <a href="#">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+              </a>
             </div>
             <div class="circle-min">
-              <i class="fa fa-twitter" aria-hidden="true"></i>
+              <a href="#">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+              </a>
             </div>
             <div class="circle-min">
-              <i class="fa fa-linkedin" aria-hidden="true"></i>
+              <a href="#">
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+              </a>
             </div>
             <div class="circle-min">
-              <i class="fa fa-envelope" aria-hidden="true"></i>
+              <a href="#">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+              </a>
             </div>
           </div>
         </div>
@@ -150,13 +188,19 @@
           <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.</p>
           <div class="team-icons">
             <div class="circle-min">
-              <i class="fa fa-facebook" aria-hidden="true"></i>
+              <a href="#">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+              </a>
             </div>
             <div class="circle-min">
-              <i class="fa fa-twitter" aria-hidden="true"></i>
+              <a href="#">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+              </a>
             </div>
             <div class="circle-min">
-              <i class="fa fa-envelope" aria-hidden="true"></i>
+              <a href="#">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+              </a>
             </div>
           </div>
         </div>
@@ -216,7 +260,7 @@
       </div>
     </div>
 
-    <div class="container portfolio clear">
+    <div class="container portfolio clear" id="work">
       <div class="portfolio-header">
         <h1>OUR PORTFOLIO</h1>
         <div class="portfolio-line"></div>
@@ -224,33 +268,49 @@
         </div>
       </div>
       <div class="portfolio-panel">
-        <div>ALL</div>
-        <div>WEB</div>
-        <div>APPS</div>
-        <div>ICONS</div>
+        <div>
+          <a href="">ALL</a>
+        </div>
+        <div>
+          <a href="">WEB</a>
+        </div>
+        <div>
+          <a href="">APPS</a>
+        </div>
+        <div>
+          <a href="">ICONS</a>
+        </div>
       </div>
 
       <div class="portfolio-content">
         <div>
           <div class="portfolio-img-wrapper">
-            <img src="./images/1.png" alt="">
-            <div>Isometric Perspective Mock-Up</div>
+            <div>
+              <img src="./images/1.png" alt="">
+            </div>
+            <div class="portfolio-img-text">Isometric Perspective Mock-Up</div>
           </div>
           <div class="portfolio-img-wrapper">
-            <img src="./images/2.png" alt="">
-            <div>Time Zone App Ui</div>
+            <div>
+              <img src="./images/2.png" alt="">
+            </div>
+            <div class="portfolio-img-text">Time Zone App Ui</div>
           </div>
         </div>
       </div>
       <div class="portfolio-content">
         <div>
           <div class="portfolio-img-wrapper">
-            <img src="./images/3.png" alt="">
-            <div>Viro Media Players UI</div>
+            <div>
+              <img src="./images/3.png" alt="">
+            </div>
+            <div class="portfolio-img-text">Viro Media Players UI</div>
           </div>
           <div class="portfolio-img-wrapper">
-            <img src="./images/4.png" alt="">
-            <div>Blog / Magazine Flat UI Kit</div>
+            <div>
+              <img src="./images/4.png" alt="">
+            </div>
+            <div class="portfolio-img-text">Blog / Magazine Flat UI Kit</div>
           </div>
         </div>
       </div>
@@ -260,9 +320,9 @@
     </div>
 
 
-    <div class="container testimonials clear">
+    <div class="container testimonials clear" id="blog">
       <div class="testimonials-header">
-        <h1>WHAT POEPLE SAY ABOUT US</h1>
+        <h1>WHAT PEOPLE SAY ABOUT US</h1>
         <div class="testimonials-line"></div>
         <div class="testimonials-description">Our clients love us!</div>
       </div>
@@ -287,21 +347,23 @@
           </div>
         </div>
 
-        <div>
-          <div class="testimonials-wrapper">
-            <div class="testimonials-circle"></div>
-            <div class="testimonials-text">
-              <p>“Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta.”</p>
-              <h1>Anne HATHAWAY</h1>
-              <h2>Lead Designer at Behance</h2>
+        <div class="level2">
+          <div>
+            <div class="testimonials-wrapper">
+              <div class="testimonials-circle"></div>
+              <div class="testimonials-text">
+                <p>“Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta.”</p>
+                <h1>Anne HATHAWAY</h1>
+                <h2>Lead Designer at Behance</h2>
+              </div>
             </div>
-          </div>
-          <div class="testimonials-wrapper">
-            <div class="testimonials-circle"></div>
-            <div class="testimonials-text">
-              <p>“Phasellus non purus vel arcu tempor commodo. Fusce semper, purus vel luctus molestie, risus sem cursus neque.”</p>
-              <h1>Emma Stone</h1>
-              <h2>Co-Founder of Shazam</h2>
+            <div class="testimonials-wrapper">
+              <div class="testimonials-circle"></div>
+              <div class="testimonials-text">
+                <p>“Phasellus non purus vel arcu tempor commodo. Fusce semper, purus vel luctus molestie, risus sem.”</p>
+                <h1>Emma Stone</h1>
+                <h2>Co-Founder of Shazam</h2>
+              </div>
             </div>
           </div>
         </div>
@@ -309,7 +371,7 @@
     </div>
 
 
-    <div class="container getInTouch clear">
+    <div class="container getInTouch clear" id="contact">
       <div class="getInTouch-header">
         <h1>Get in Touch</h1>
         <div class="getInTouch-line"></div>
@@ -327,11 +389,24 @@
       </form>
 
       <div class="getInTouch-button-wrapper">
-          <button class="getInTouch-button">WORK WITH US!</button>
-        </div>
+        <button class="getInTouch-button">WORK WITH US!</button>
+      </div>
     </div>
 
   </main>
+  <div class="container base">
+    <footer class="footer">
+      <div class="footer-wrapper">
+        <a href="#" class="footer-content">Facebook</a>
+        <a href="#" class="footer-content">Twitter</a>
+        <a href="#" class="footer-content">Google+</a>
+        <a href="#" class="footer-content">LinkedIn</a>
+        <a href="#" class="footer-content">Behance</a>
+        <a href="#" class="footer-content">Dribble</a>
+        <a href="#" class="footer-content">GitHub</a>
+      </div>
+    </footer>
+  </div>
 
   <script src="assets/components/jquery/jquery.min.js"></script>
   <script src="assets/js/scripts.min.js"></script>

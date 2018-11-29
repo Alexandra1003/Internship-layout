@@ -20,16 +20,17 @@
     width: 100%;
     input {
         background-color: #273a71;
-        width: 48%;
+        padding: 15px 20px;
         border: none;
         margin-bottom: 30px;
         height: 55px;
         border-radius: 5px;
         color: #fff;
         font-size: 18px;
+        font-family: 'Titillium Web', sans-serif;
     }
     textarea {
-        width: 100%;
+        width: 96%;
         background-color: #273a71;
         border: none;
         min-height: 200px;

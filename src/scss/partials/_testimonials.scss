@@ -18,17 +18,15 @@
 
 .testimonials-content {
     .testimonials-wrapper {
-        width: 48%;
+        
         float: left;
-        padding: 8px;
+        padding: 15px;
         .testimonials-circle {
             float: left; 
             @include circle(50px, #787878); 
             margin-right: 40px;
         }
         .testimonials-text {
-            max-width: 54%;
-            float: left;
             p {
                 margin: 0;
                 font-size: 21px; 
@@ -44,7 +42,7 @@
         }    
     } 
 }
-.level1 {
-    margin-bottom: 140px;
+
+.level2 {
+    clear: both;
 }
-  

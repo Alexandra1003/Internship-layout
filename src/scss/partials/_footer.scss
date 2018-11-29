@@ -1,3 +1,31 @@
-.footer {
+.base {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
 
+.footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    padding: 0;
+    background-color: #344b8e;
+}
+
+.footer-wrapper {
+    padding-top: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: inline-block;
+    color: #fff;
+    text-align: center;
+    background-color: #344b8e;
+    font-size: 24px;
+    text-decoration: none;
+    &:hover {
+        color: #30b4e2;
+    } 
 }

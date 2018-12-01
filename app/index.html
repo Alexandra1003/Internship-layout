@@ -26,21 +26,21 @@
         <img src="./images/logo.png" alt="">
       </div>
       <nav class="panel">
-        <div>
-          <a href="#home">HOME</a>
-        </div>
-        <div>
-          <a href="#about">ABOUT</a>
-        </div>
-        <div>
-          <a href="#work">WORK</a>
-        </div>
-        <div>
-          <a href="#blog">BLOG</a>
-        </div>
-        <div>
-          <a href="#contact">CONTACT</a>
-        </div>
+
+        <a href="#home" class="active">HOME</a>
+
+
+        <a href="#about">ABOUT</a>
+
+
+        <a href="#work">WORK</a>
+
+
+        <a href="#blog">BLOG</a>
+
+
+        <a href="#contact">CONTACT</a>
+
 
       </nav>
       <div class="welcome-hidden-menu">
@@ -98,7 +98,7 @@
         <div class="team-description">We are a small team of designers and developers, who help brands with big ideas.</div>
       </div>
 
-      <div class="team-container">
+      <div class="team-container clear">
         <div class="team-content">
           <div class="circle"></div>
           <h1>ANNE HATHAWAY</h1>
@@ -268,18 +268,18 @@
         </div>
       </div>
       <div class="portfolio-panel">
-        <div>
-          <a href="">ALL</a>
-        </div>
-        <div>
-          <a href="">WEB</a>
-        </div>
-        <div>
-          <a href="">APPS</a>
-        </div>
-        <div>
-          <a href="">ICONS</a>
-        </div>
+
+        <a href="">all</a>
+
+
+        <a href="">web</a>
+
+
+        <a href="">apps</a>
+
+
+        <a href="">icons</a>
+
       </div>
 
       <div class="portfolio-content">
@@ -380,11 +380,30 @@
 
       <form>
         <div class="input-wrapper">
-          <input type="text" placeholder="Your Name">
-          <input class="input-second" type="text" placeholder="Your Email">
+          <div class="input-placeholder first">
+            <input type="text" required>
+            <div class="placeholder">
+              Your Name
+              <span>*</span>
+            </div>
+          </div>
+          <div class="input-placeholder second">
+            <input type="text" required>
+            <div class="placeholder">
+              Your Email
+              <span>*</span>
+            </div>
+          </div>
         </div>
+        
         <div class="input-wrapper">
-          <textarea placeholder="Your Message"></textarea>
+            <div class="input-placeholder textarea">
+                <textarea type="text" required></textarea>
+                <div class="placeholder">
+                  Your Message
+                  <span>*</span>
+                </div>
+              </div>
         </div>
       </form>
 

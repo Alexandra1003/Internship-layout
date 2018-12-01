@@ -6,15 +6,22 @@
   text-align: center;
   clear: both;
   font-size: 42px;
+  font-weight: 700;
   color: #fff;
-  margin-top: 146px;
+  width: 72%;
+  margin: auto;
+  margin-bottom: 60px;
 }
 
 .panel{
   @include panel(#87509c, #643a79, #fff);
+  margin-bottom: 145px;
   a {
     color: #fff;
     text-decoration: none;
+  }
+  .active {
+    background-color: #643a79;
   }
   }
   

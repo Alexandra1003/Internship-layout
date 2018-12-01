@@ -4,12 +4,7 @@
   }
   
   .testimonials-header {
-      @include header;
       margin-bottom: 40px;
-  }
-  
-  .testimonials-description {
-      @include header-desc;
   }
   
   .testimonials-line {
@@ -17,27 +12,24 @@
   }
 
 .testimonials-content {
-    .testimonials-wrapper {
-        
+    .testimonials-wrapper {    
         float: left;
         padding: 15px;
-        .testimonials-circle {
-            float: left; 
-            @include circle(50px, #787878); 
-            margin-right: 40px;
-        }
         .testimonials-text {
             p {
                 margin: 0;
                 font-size: 21px; 
+                font-style: italic;
             }
             h1 {
                 font-size: 24px;
                 text-transform: uppercase;
+                margin-bottom: 0;
             }
             h2 {
                 font-size: 18px;
                 color: #ffdd99;
+                margin: 0;
             }
         }    
     } 

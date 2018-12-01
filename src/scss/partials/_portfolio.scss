@@ -4,29 +4,16 @@
   }
   
   .portfolio-header {
-      @include header;
       margin-bottom: 40px;
-  }
-  
-  .portfolio-description {
-      @include header-desc;
   }
   
   .portfolio-line {
       @include header-line(#e5c37f);
   }
   .portfolio-panel{
-    @include panel(#ebc985, #fff, #45433e);
     float: none;
     text-align: center;
     padding-bottom: 60px;
-    a {
-        color: #fff;
-        text-decoration: none;
-        &:hover {
-            color: #000;
-        }
-    }
     }
 
 .portfolio-content {
@@ -35,19 +22,16 @@
         img {
             display: inline-block;
             margin-bottom: 30px;
+            width: 100%;
         }
         .portfolio-img-text {
-            font-size: 18px;
             text-align: center;
             text-transform: uppercase;
-            margin-bottom: 65px;
         }
     }   
 }
 .portfolio-button-wrapper {
     text-align: center;
-    .portfolio-button {
-        @include button(#17c2a4, #14a58c);
-      }
+    
   }
   

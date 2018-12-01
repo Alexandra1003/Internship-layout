@@ -3,18 +3,14 @@
   color: #fff;
 }
 
+.services-header {
+  margin-bottom: 80px;
+}
+
 .services-content {
     @include container-inline-4(#fff);
     
   }
-
-.services-header {
-    @include header;
-}
-
-.services-description {
-    @include header-desc;
-}
 
 .services-line {
     @include header-line(#14a58c);

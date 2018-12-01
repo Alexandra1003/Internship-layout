@@ -1,4 +1,4 @@
-@media only screen and (min-width: 1200px) and (max-width: 1400px) {
+@media only screen and (min-width: 1200px) and (max-width: 1500px) {
     .container {
       max-width: 1140px;
     }
@@ -6,25 +6,85 @@
       display: none;
     }
 
+    .services-header h1 {
+      @include header;
+    }
+    .team-header h1 {
+      @include header;
+    }
+    .skills-header h1 {
+      @include header;
+    }
+    .portfolio-header h1 {
+      @include header;
+    }
+    .testimonials-header h1 {
+      @include header;
+    }
+    .getInTouch-header h1 {
+      @include header;
+    }
+
+    .services-description {
+      @include header-desc(51%);
+    }
+    .team-description {
+      @include header-desc(55%);
+    }
+    .skills-description {
+      @include header-desc(51%);
+    }
+    .portfolio-description {
+      @include header-desc(51%);
+    }
+    .testimonials-description {
+      @include header-desc(50%);
+    }
+    .getInTouch-description {
+      @include header-desc(66%);
+    }
+
+
     .portfolio-content {
       .portfolio-img-wrapper {
           float: left;
           padding: 8px;
           width: 48%;
+          div {
+            text-align: center;
+          }
           img {
               display: inline-block;
-              max-width: 400px;
               margin-bottom: 30px;
-    }
+          }
+          .portfolio-img-text {
+            font-size: 18px;
+            margin-bottom: 85px;
+        }
   }
+}
+.portfolio-panel{
+  @include panel(#ebc985, #fff, #45433e);
+}
+
+.portfolio-button {
+  @include button(#17c2a4, #14a58c);
+}
+
+.getInTouch-button {
+  @include button(#30bae7, #299ec5);
 }
 
     .testimonials-wrapper {
       width: 46%;
-    }
-    .testimonials-text {
-      max-width: 54%;
-      float: left;
+      .testimonials-circle {
+        float: left; 
+        @include circle(50px, #787878); 
+      }
+      .testimonials-text {
+        max-width: 70%;
+        float: right;
+      }
     }
 
     .level1 {
@@ -32,17 +92,35 @@
     }
 
     .input-wrapper {
+      width: 100%;
+      .input-placeholder {
+        width: 48%;  
       input{
-        width: 45%;
+        box-sizing: border-box;
+        width: 100%;
+        padding: 15px 20px;
       }
       textarea {
-        width: 96%;
-        padding: 20px;
-      }    
-    }
-    .input-second {
+        width: 100%;
+        padding: 18px 20px;    
+      }  
+    } 
+      .textarea {
+        div {
+            top: 15px;
+        }
+      } 
+    
+    .second {
       float: right;
-  }
+      margin-left: 1%;
+    }
+
+    .first {
+      display: inline-block;
+     margin-right: 1%;
+    }
+    }
 
     .footer-content {
       padding: 20px 30px;
@@ -56,6 +134,44 @@
       max-width: 960px;
     }
 
+    .services-header h1 {
+      @include header;
+    }
+    .team-header h1 {
+      @include header;
+    }
+    .skills-header h1 {
+      @include header;
+    }
+    .portfolio-header h1 {
+      @include header;
+    }
+    .testimonials-header h1 {
+      @include header;
+    }
+    .getInTouch-header h1 {
+      @include header;
+    }
+
+
+    .services-description {
+      @include header-desc(51%);
+    }
+    .team-description {
+      @include header-desc(55%);
+    }
+    .skills-description {
+      @include header-desc(51%);
+    }
+    .portfolio-description {
+      @include header-desc(51%);
+    }
+    .testimonials-description {
+      @include header-desc(50%);
+    }
+    .getInTouch-description {
+      @include header-desc(66%);
+    }
     .welcome-hidden-menu {
       display: none;
     }
@@ -86,25 +202,42 @@
   .portfolio-img-wrapper {
     max-width: 47%;
     float: left;
+    div {
+      text-align: center;
+    }
     img {
       width: 100%;
       max-width: 500px;
     }
+    .portfolio-img-text {
+      font-size: 18px;
+      margin-bottom: 85px;
+  }
   }
   
-  .portfolio-panel div a {
-    padding: 15px 20px;
-    &:hover {
-      padding: 15px 20px;
-    }
+  .portfolio-panel{
+    @include panel(#ebc985, #fff, #45433e);
+  }
+
+  .portfolio-button {
+    @include button(#17c2a4, #14a58c);
+  }
+
+  .getInTouch-button {
+    @include button(#30bae7, #299ec5);
   }
 
     .testimonials-wrapper {
       width: 45%;
-    }
-    .testimonials-text {
-      max-width: 50%;
-      float: right;
+      .testimonials-circle {
+        float: left; 
+        @include circle(50px, #787878); 
+      }
+      .testimonials-text {
+        max-width: 64%;
+        margin-left: 10px;
+        float: right;
+      }
     }
 
     .level1 {
@@ -112,24 +245,39 @@
     }
 
     .input-wrapper {
+      width: 100%;
+      .input-placeholder {
+        width: 48%; 
       input{
-        width: 43%;
+        box-sizing: border-box;
+        width: 100%;
+        padding: 15px 20px;
       }
       textarea {
-        width: 96%;
-        padding: 15px;
-      }    
+        width: 100%;
+        padding: 18px 20px;
+      }   
+    } 
+      .textarea {
+        div {
+            top: 15;
+        }
+    }
+    .second {
+      float: right;
+      margin-left: 1%;
     }
 
-    .input-second {
-      float: right;
-  }
+    .first {
+      display: inline-block;
+     margin-right: 1%;
+    }
+}
 
     .footer-content {
       padding: 20px;
       font-size: 24px;
     }
-
 
   }
 
@@ -139,13 +287,51 @@
     }
     .panel {
       display: none;
-      
     }
 
+    .services-header h1 {
+      @include header;
+    }
+    .team-header h1 {
+      @include header;
+    }
+    .skills-header h1 {
+      @include header;
+    }
+    .portfolio-header h1 {
+      @include header;
+    }
+    .testimonials-header h1 {
+      @include header;
+    }
+    .getInTouch-header h1 {
+      @include header;
+    }
+
+
+    .services-description {
+      @include header-desc(51%);
+    }
+    .team-description {
+      @include header-desc(55%);
+    }
+    .skills-description {
+      @include header-desc(51%);
+    }
+    .portfolio-description {
+      @include header-desc(51%);
+    }
+    .testimonials-description {
+      @include header-desc(50%);
+    }
+    .getInTouch-description {
+      @include header-desc(66%);
+    }
     .welcome-hidden-menu {
       display: block;
       float: right;
       cursor: pointer;
+      margin-bottom: 40px;
       div {
         display: block;
         width: 40px;
@@ -179,38 +365,70 @@
       div{
         margin: auto;
         margin-bottom: 30px;
+        text-align: center;
         img {
           max-width: 100%;
           display: inline-block;
         }
+        .portfolio-img-text {
+          font-size: 18px;
+          margin-bottom: 85px;
+      }
       }
     }
 
-    .portfolio-panel div a {
-      padding: 15px 20px;
-      &:hover {
-        padding: 15px 20px;
-        color: #000;
-      }
+    .portfolio-panel{
+      @include panel(#ebc985, #fff, #45433e);
     }
 
-    .testimonials-text h1,h2 {
+    .portfolio-button {
+      @include button(#17c2a4, #14a58c);
+    }
+
+    .getInTouch-button {
+      @include button(#30bae7, #299ec5);
+    }
+
+  .testimonials-text {
+    float: right;
+    max-width: 75%;
+    h1, h2 {
       text-align: right;
+    }
+  }
+  .testimonials-circle {
+    float: left; 
+    @include circle(50px, #787878); 
   }
 
   .input-wrapper {
+    width: 100%;
+    .input-placeholder {
+      width: 48%; 
     input{
-      width: 40%;
-      padding: 0;
+      box-sizing: border-box;
+      width: 100%;
+      padding: 15px 20px;
     }
     textarea {
       width: 100%;
-      padding: 9px;
-    }    
+      padding: 18px 20px;
+    }  
+  } 
+    .textarea {
+      div {
+          top: 15px;
+      } 
+  }
+  .second {
+    float: right;
+    margin-left: 1%;
   }
 
-  .input-second {
-    float: right;
+  .first {
+    display: inline-block;
+   margin-right: 1%;
+  }
 }
 
 .footer-content {
@@ -232,11 +450,16 @@
       display: none;
       
     }
+    .welcome-text {
+      font-size: 20px;
+
+    }
 
     .welcome-hidden-menu {
       display: block;
       float: right;
       cursor: pointer;
+      margin-bottom: 30px;
       div {
         display: block;
         width: 40px;
@@ -245,16 +468,63 @@
         margin: 6px; 
       }
     }
+    .welcome-button {
+      width: 200px;
+      height: 50px;
+      font-size: 14px;
+    }
 
     .services-content {
       width: 45%;
       margin: 30px auto;
       float: none;
-      
     }
 
     div.team-content {
       width: 100%;
+      margin: 20px auto;
+    }
+
+    .services-header h1 {
+      @include small-header;
+    }
+    .team-header h1 {
+      @include small-header;
+    }
+    .skills-header h1 {
+      @include small-header;
+    }
+    .portfolio-header h1 {
+      @include small-header;
+    }
+    .testimonials-header h1 {
+      @include small-header;
+    }
+    .getInTouch-header h1 {
+      @include small-header;
+    }
+    
+
+    .services-description {
+      @include small-header-desc(100%);
+      margin-bottom: 40px;
+    }
+    .team-description {
+      @include small-header-desc(100%);
+      margin-bottom: 40px;
+    }
+    .skills-description {
+      @include small-header-desc(100%);
+      margin-bottom: 40px;
+    }
+    .portfolio-description {
+      @include small-header-desc(100%);
+    }
+    .testimonials-description {
+      @include small-header-desc(100%);
+    }
+    .getInTouch-description {
+      @include small-header-desc(100%);
     }
 
     .team-content h2 {
@@ -272,41 +542,70 @@
       display: block;
       div{
         margin: auto;
-        margin-bottom: 30px;
-        img {
+        margin-bottom: 15px;
+        text-align: center;
+      img {
           max-width: 100%;
           display: inline-block;
+          margin-bottom: 25px;
         }
+        .portfolio-img-text {
+          margin-bottom: 25px;
+          font-size: 15px;
+        }   
       }
     }
 
-    .portfolio-panel div a {
-      padding: 10px 10px;
-      &:hover {
-        padding: 10px 10px;
-        color: #000;
-      }
+    .portfolio-panel {
+      @include small-panel(#ebc985, #fff, #45433e)
     }
 
-    .testimonials-text h1,h2 {
-      text-align: right;
+    .portfolio-button {
+      @include small-button(#17c2a4, #14a58c);
+    }
+
+    .getInTouch-button {
+      @include small-button(#30bae7, #299ec5);
+    }
+
+    .testimonials-text {
+      text-align: center;
+  }
+
+  .testimonials-circle {
+    @include circle(50px, #787878);
+    margin: 25px auto;
+    float:none;
   }
 
   .input-wrapper {
+    width: 100%;
+    .input-placeholder {
+      width: 100%;
+    
     input{
-      float: left;
-      width: 96%;
-      padding: 0;
+      box-sizing: border-box;
+      width: 100%;
+      height: 25px;
+      padding: 25px 20px;
     }
     textarea {
       width: 100%;
-      padding: 9px;
-    }    
+      padding: 15px 20px;
+    } 
+  }  
+  
+    .textarea {
+      div {
+          top: 15px;
+      } 
+    }
+    .first, .second {
+      float: none;
+    }   
   }
+  
 
-  .input-wrapper .input-second {
-    float: left;
-}
 
 .footer-content {
   padding-right: 10px;
@@ -314,5 +613,5 @@
   font-size: 18px;
 }
 
+  }  
   
-  }

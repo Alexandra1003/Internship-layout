@@ -2,6 +2,10 @@
     background-color: #e7f1f8;
     color: #3c4761;
   }
+
+  .team-header {
+    margin-bottom: 80px;
+  }
   
   .team-content {
     @include container-inline-4(#27283d);
@@ -27,14 +31,6 @@
             }
         }
     }
-  }
-  
-  .team-header {
-      @include header();
-  }
-  
-  .team-description {
-      @include header-desc();
   }
   
   .team-line {

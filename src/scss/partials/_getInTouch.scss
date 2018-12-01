@@ -4,52 +4,75 @@
   }
   
   .getInTouch-header {
-      @include header;
-      margin-bottom: 40px;
-  }
-  
-  .getInTouch-description {
-      @include header-desc;
+      margin-bottom: 75px;
   }
   
   .getInTouch-line {
       @include header-line(#273a71);
   }
 
+  form {
+      width: 74%;
+      margin: auto;
+  }
+
   .input-wrapper {
     width: 100%;
-    input {
-        background-color: #273a71;
-        padding: 15px 20px;
-        border: none;
-        margin-bottom: 30px;
-        height: 55px;
-        border-radius: 5px;
-        color: #fff;
-        font-size: 18px;
-        font-family: 'Titillium Web', sans-serif;
-    }
-    textarea {
-        background-color: #273a71;
-        border: none;
-        min-height: 200px;
-        border-radius: 5px;
-        color: #fff;
-        font-size: 18px;
-    }
-    ::placeholder { 
-        color: #fff;
-        font-size: 18px;
-        padding: 15px;
-
-    }
+    .input-placeholder {
+        position: relative;      
+        input {
+          width: 100%;
+          background-color: #273a71;
+          border: none;
+          margin-bottom: 30px;
+          border-radius: 5px;
+          color: #fff;
+          font-size: 18px;
+          font-family: 'Titillium Web', sans-serif;
+        }
+        textarea {
+            width: 100%;
+            box-sizing: border-box;
+            background-color: #273a71;
+            border: none;
+            min-height: 200px;
+            border-radius: 5px;
+            color: #fff;
+            font-size: 18px;
+            margin-bottom: 60px;
+        }
+        ::placeholder { 
+            color: #fff;
+            font-size: 18px;
+        }
+      }
+      .textarea {
+        width: 100%;
+      }
+      .input-placeholder input:valid + .placeholder {
+        display: none;
+      }
+      .input-placeholder textarea:valid + .placeholder {
+        display: none;
+      }
+      .placeholder {
+        position: absolute;
+        pointer-events: none;
+        top: 15px;
+        left: 25px;
+        margin: auto;
+        color: #ccc;
+      }
+      .placeholder span {
+        color: red;
+      }    
   }
+
+
 
   .getInTouch-button-wrapper {
     text-align: center;
   }
   
-  .getInTouch-button {
-    @include button(#30bae7, #299ec5);
-  }
+
   

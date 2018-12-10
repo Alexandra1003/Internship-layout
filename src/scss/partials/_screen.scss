@@ -149,10 +149,15 @@
     }
     }
 
-    .footer-content {
-      padding: 20px 30px;
-      font-size: 24px;
+    ul{
+      li {
+        padding: 20px 30px;
+        .footer-content {
+          font-size: 24px;
+        }
+      }
     }
+    
     
   }
   
@@ -318,10 +323,14 @@
     }
 }
 
+ul{
+  li {
+    padding: 20px 20px;
     .footer-content {
-      padding: 20px;
       font-size: 24px;
     }
+  }
+}
 
   }
 
@@ -532,11 +541,15 @@
     }
   }
 }
-
-.footer-content {
-  padding-right: 10px;
+ul{
+  li {
+    padding: 10px 5px;
+    .footer-content {
+      font-size: 24px;
+      padding-right: 10px;
   padding-top: 10px;
-  font-size: 24px;
+    }
+  }
 }
 
   }
@@ -753,12 +766,16 @@
     }
   }
 
-
-.footer-content {
-  padding-right: 10px;
+  ul{
+    li {
+      padding: 10px 1px;
+      .footer-content {
+        padding-right: 10px;
   padding-top: 10px;
   font-size: 18px;
-}
+      }
+    }
+  } 
 
   }  
   

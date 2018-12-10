@@ -16,15 +16,21 @@
     padding-top: 20px;
     text-align: center;
     font-weight: 500;
+    ul {
+        li {
+            display: inline-block;
+            .footer-content {
+                
+                color: #fff;
+                text-align: center;
+                background-color: #344b8e;
+                text-decoration: none;
+                &:hover {
+                    color: #30b4e2;
+                } 
+            }
+        }
+    }
 }
 
-.footer-content {
-    display: inline-block;
-    color: #fff;
-    text-align: center;
-    background-color: #344b8e;
-    text-decoration: none;
-    &:hover {
-        color: #30b4e2;
-    } 
-}
+

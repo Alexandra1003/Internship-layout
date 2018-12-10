@@ -2,26 +2,29 @@
     .container {
       max-width: 1140px;
     }
-    .welcome-hidden-menu {
+    .services, .team, .skills, .portfolio, .testimonials {
+      padding-top: 110px;
+    }
+    .header-hidden-menu {
       display: none;
     }
 
-    .services-header h1 {
+    .services-header h6 {
       @include header;
     }
-    .team-header h1 {
+    .team-header h6 {
       @include header;
     }
-    .skills-header h1 {
+    .skills-header h6 {
       @include header;
     }
-    .portfolio-header h1 {
+    .portfolio-header h6 {
       @include header;
     }
-    .testimonials-header h1 {
+    .testimonials-header h6 {
       @include header;
     }
-    .getInTouch-header h1 {
+    .getInTouch-header h6 {
       @include header;
     }
 
@@ -44,12 +47,22 @@
       @include header-desc(66%);
     }
 
+    .services-content {
+      padding: 0 20px 30px;
+    }
+
+    .team-content {
+      padding: 0 20px 30px;
+    }
+    .avatar {
+      @include circle(100px, #878787); 
+  }
 
     .portfolio-content {
       .portfolio-img-wrapper {
           float: left;
           padding: 8px;
-          width: 48%;
+          width: 50%;
           div {
             text-align: center;
           }
@@ -75,6 +88,10 @@
   @include button(#30bae7, #299ec5);
 }
 
+.getInTouch {
+  padding-top: 110px;
+}
+
     .testimonials-wrapper {
       width: 46%;
       .testimonials-circle {
@@ -84,6 +101,16 @@
       .testimonials-text {
         max-width: 70%;
         float: right;
+        font-size: 20px; 
+        p {
+          margin: 0;
+      }
+      }
+      h6 {
+        font-size: 24px;
+      }
+      h2 {
+        font-size: 18px;
       }
     }
 
@@ -133,23 +160,26 @@
     .container {
       max-width: 960px;
     }
+    .services, .team, .skills, .portfolio, .testimonials {
+      padding-top: 110px;
+    }
 
-    .services-header h1 {
+    .services-header h6 {
       @include header;
     }
-    .team-header h1 {
+    .team-header h6 {
       @include header;
     }
-    .skills-header h1 {
+    .skills-header h6 {
       @include header;
     }
-    .portfolio-header h1 {
+    .portfolio-header h6 {
       @include header;
     }
-    .testimonials-header h1 {
+    .testimonials-header h6 {
       @include header;
     }
-    .getInTouch-header h1 {
+    .getInTouch-header h6 {
       @include header;
     }
 
@@ -172,35 +202,35 @@
     .getInTouch-description {
       @include header-desc(66%);
     }
-    .welcome-hidden-menu {
+    .header-hidden-menu {
       display: none;
     }
 
     .services-content {
-      width: 46%;
-      padding-bottom: 30px;
-      transition: width 2s, height 4s, transform 2s;
+      width: 50%;
+      padding: 0 20px 30px;
       img {
         margin-bottom: 25px;
       }
     }
     
     div.team-content {
-      width: 46%;
-      padding-bottom: 30px;
-      transition: width 2s, height 4s, transform 2s;
+      width: 50%;
+      margin-bottom: 30px;
     }
 
     div.skills-content {
-      width: 46%;
-      padding-bottom: 30px;
-      margin-bottom: 20px;
-      transition: width 2s, height 4s, transform 2s;
+      width: 50%;
+      margin-bottom: 50px;
     }
+
+    .avatar {
+      @include circle(100px, #878787); 
+  }
   
 
   .portfolio-img-wrapper {
-    max-width: 47%;
+    max-width: 50%;
     float: left;
     div {
       text-align: center;
@@ -227,6 +257,10 @@
     @include button(#30bae7, #299ec5);
   }
 
+  .getInTouch {
+    padding-top: 50px;
+  }
+
     .testimonials-wrapper {
       width: 45%;
       .testimonials-circle {
@@ -235,8 +269,18 @@
       }
       .testimonials-text {
         max-width: 64%;
+        font-size: 20px; 
         margin-left: 10px;
         float: right;
+        p {
+          margin: 0;
+      }
+        h6 {
+          font-size: 24px;
+        }
+        h2 {
+          font-size: 18px;
+        }
       }
     }
 
@@ -285,41 +329,50 @@
     .container {
       max-width: 720px;
     }
+    .services, .team, .skills, .portfolio, .testimonials {
+      padding-top: 110px;
+    }
     .panel {
       display: none;
     }
 
-    .services-header h1 {
+    .services-header h6 {
       @include header;
+      font-size: 30px;
     }
-    .team-header h1 {
+    .team-header h6 {
       @include header;
+      font-size: 30px;
     }
-    .skills-header h1 {
+    .skills-header h6 {
       @include header;
+      font-size: 30px;
     }
-    .portfolio-header h1 {
+    .portfolio-header h6 {
       @include header;
+      font-size: 30px;
     }
-    .testimonials-header h1 {
+    .testimonials-header h6 {
       @include header;
+      font-size: 30px;
     }
-    .getInTouch-header h1 {
+    .getInTouch-header h6 {
       @include header;
+      font-size: 30px;
     }
 
 
     .services-description {
-      @include header-desc(51%);
+      @include header-desc(71%);
     }
     .team-description {
-      @include header-desc(55%);
+      @include header-desc(65%);
     }
     .skills-description {
-      @include header-desc(51%);
+      @include header-desc(77%);
     }
     .portfolio-description {
-      @include header-desc(51%);
+      @include header-desc(77%);
     }
     .testimonials-description {
       @include header-desc(50%);
@@ -327,7 +380,7 @@
     .getInTouch-description {
       @include header-desc(66%);
     }
-    .welcome-hidden-menu {
+    .header-hidden-menu {
       display: block;
       float: right;
       cursor: pointer;
@@ -340,30 +393,33 @@
         margin: 6px; 
       }
     }
+    .avatar {
+      @include circle(100px, #878787); 
+  }
 
     .services-content {
-      width: 45%;
-      
+      width: 50%;
+      padding: 0 20px 30px;
     }
 
     .team-content h2 {
       text-align: center;
   }
     div.team-content {
-      width: 45%;
-      margin: 25px 10px;
+      width: 50%;
+      margin: 25px 0px;
     }
 
     div.skills-content {
-      width: 45%;
+      width: 50%;
     }
 
     .portfolio-img-wrapper {
       float: none;
-      width: 100%;
+      width: 75%;
       display: block;
       div{
-        margin: auto;
+        margin:0 auto;
         margin-bottom: 30px;
         text-align: center;
         img {
@@ -381,24 +437,56 @@
       @include panel(#ebc985, #fff, #45433e);
     }
 
+    .welcome-button {
+      height: 65px;
+      width: 230px;
+      font-size: 16px;
+    }
+
     .portfolio-button {
       @include button(#17c2a4, #14a58c);
+      height: 65px;
+      width: 230px;
+      font-size: 16px;
     }
 
     .getInTouch-button {
       @include button(#30bae7, #299ec5);
+      height: 65px;
+      width: 230px;
+      font-size: 16px;
     }
+
+    .getInTouch {
+      padding-top: 50px;
+    }
+
 
   .testimonials-text {
     float: right;
     max-width: 75%;
-    h1, h2 {
+    font-size: 20px; 
+    p {
+      margin: 0;
+  }
+    h6, h2 {
       text-align: right;
+    }
+    h6 {
+      font-size: 20px;
+    }
+    h2 {
+      font-size: 16px;
     }
   }
   .testimonials-circle {
     float: left; 
     @include circle(50px, #787878); 
+  }
+
+  .welcome-text {
+    font-size: 34px;
+
   }
 
   .input-wrapper {
@@ -430,6 +518,20 @@
    margin-right: 1%;
   }
 }
+.footer {
+  padding: 20px 0;
+  .footer-container {
+    padding: 0;
+    .footer-wrapper {
+      padding: 0;
+      font-weight: 400;
+      word-spacing: 10px;
+      a {
+        font-size:20px;
+      }
+    }
+  }
+}
 
 .footer-content {
   padding-right: 10px;
@@ -443,7 +545,17 @@
     .container {
       width: 100%; 
       box-sizing: border-box;
-      padding: 60px 50px; 
+      padding: 0 10px 80px;
+    }
+    .logo img {
+      width: 90px;
+    }
+    .header {
+      padding: 30px 0 0;
+    }
+
+    .services, .team, .skills, .portfolio, .testimonials {
+      padding-top: 70px;
     }
 
     .panel {
@@ -455,15 +567,15 @@
 
     }
 
-    .welcome-hidden-menu {
+    .header-hidden-menu {
       display: block;
       float: right;
       cursor: pointer;
       margin-bottom: 30px;
       div {
         display: block;
-        width: 40px;
-        height: 5px;
+        width: 35px;
+        height: 3px;
         background-color: #fff;
         margin: 6px; 
       }
@@ -475,9 +587,13 @@
     }
 
     .services-content {
-      width: 45%;
-      margin: 30px auto;
+      width: 70%;
+      padding: 0 20px;
+      margin: 40px auto;
       float: none;
+      img {
+        max-height: 100px;
+      }
     }
 
     div.team-content {
@@ -485,51 +601,54 @@
       margin: 20px auto;
     }
 
-    .services-header h1 {
+    .services-header h6 {
       @include small-header;
     }
-    .team-header h1 {
+    .team-header h6 {
       @include small-header;
     }
-    .skills-header h1 {
+    .skills-header h6 {
       @include small-header;
     }
-    .portfolio-header h1 {
+    .portfolio-header h6 {
       @include small-header;
     }
-    .testimonials-header h1 {
+    .testimonials-header h6 {
       @include small-header;
     }
-    .getInTouch-header h1 {
+    .getInTouch-header h6 {
       @include small-header;
     }
     
 
     .services-description {
-      @include small-header-desc(100%);
+      @include small-header-desc(90%);
       margin-bottom: 40px;
     }
     .team-description {
-      @include small-header-desc(100%);
+      @include small-header-desc(90%);
       margin-bottom: 40px;
     }
     .skills-description {
-      @include small-header-desc(100%);
+      @include small-header-desc(90%);
       margin-bottom: 40px;
     }
     .portfolio-description {
-      @include small-header-desc(100%);
+      @include small-header-desc(90%);
     }
     .testimonials-description {
-      @include small-header-desc(100%);
+      @include small-header-desc(90%);
     }
     .getInTouch-description {
-      @include small-header-desc(100%);
+      @include small-header-desc(90%);
     }
 
     .team-content h2 {
       text-align: center;
   }
+  .avatar {
+    @include circle(80px, #878787); 
+}
 
     div.skills-content {
       width: 100%;
@@ -538,10 +657,10 @@
 
     .portfolio-img-wrapper {
       float: none;
-      width: 100%;
+      width: 75%;
       display: block;
       div{
-        margin: auto;
+        margin:0 auto;
         margin-bottom: 15px;
         text-align: center;
       img {
@@ -568,8 +687,22 @@
       @include small-button(#30bae7, #299ec5);
     }
 
+    .getInTouch {
+      padding-top: 50px;
+    }
+
     .testimonials-text {
       text-align: center;
+      font-size: 16px;
+      p {
+        margin-bottom: 15px;
+      }
+      h6 {
+        font-size: 18px;
+      }
+      h2 {
+        font-size: 14px;
+      }
   }
 
   .testimonials-circle {
@@ -605,6 +738,20 @@
     }   
   }
   
+  .footer {
+    padding: 20px 0;
+    .footer-container {
+      padding: 0;
+      .footer-wrapper {
+        padding: 0;
+        font-weight: 400;
+        word-spacing: 10px;
+        a {
+          font-size:16px;
+        }
+      }
+    }
+  }
 
 
 .footer-content {

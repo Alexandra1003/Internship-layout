@@ -9,25 +9,10 @@
   font-weight: 700;
   color: #fff;
   width: 72%;
-  margin: auto;
+  margin:0 auto;
   margin-bottom: 60px;
 }
-
-.panel{
-  @include panel(#87509c, #643a79, #fff);
-  margin-bottom: 145px;
-  a {
-    color: #fff;
-    text-decoration: none;
-  }
-  .active {
-    background-color: #643a79;
-  }
-  }
   
-.logo {
-  float: left;
-}
 .welcome-button-wrapper {
   text-align: center;
 }

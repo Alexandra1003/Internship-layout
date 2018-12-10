@@ -5,15 +5,12 @@
   
   .getInTouch-header {
       margin-bottom: 75px;
-  }
-  
-  .getInTouch-line {
-      @include header-line(#273a71);
+      @include after-line(#273a71);
   }
 
   form {
-      width: 74%;
-      margin: auto;
+      width: 100%;
+      margin:0 auto;
   }
 
   .input-wrapper {
@@ -60,7 +57,7 @@
         pointer-events: none;
         top: 15px;
         left: 25px;
-        margin: auto;
+        margin:0 auto;
         color: #ccc;
       }
       .placeholder span {

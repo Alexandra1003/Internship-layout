@@ -1,10 +1,14 @@
 .skills {
     background-color: #fff;
     color: #3c4761;
+    .skills-container {
+        width: 100%;
+    }
   }
 
   .skills-header {
     margin-bottom: 80px;
+    @include after-line(#dfe8ed);
   }
   
   .skills-content {
@@ -38,18 +42,19 @@
         .circle-center {
             @include circle-center(70px, #fff); 
         }
-        span {
+        .skills-perCent {
             font-size: 50px;
             font-weight: 300;
             position: absolute;
             top: 50%;
             left: 50%;
             margin-right: -50%;
-            transform: translate(-50%, -50%)
+            transform: translate(-50%, -50%);
+            color: #27283d;
+        }
+        p {
+            line-height: 75px;
         }
   }
   
-  .skills-line {
-      @include header-line(#dfe8ed);
-  }
   

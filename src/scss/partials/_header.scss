@@ -1,0 +1,28 @@
+.header {
+    background-color: #87509c;
+    width: 100%;
+    padding: 60px 0 0 0;
+    .logo {
+        float: left;
+      }
+      .panel{
+        @include panel(#87509c, #643a79, #fff);
+        ul {
+          li {
+            display: inline-block;
+          }
+        }
+        a {
+          color: #fff;
+          text-decoration: none;
+        }
+        .active {
+          background-color: #643a79;
+        }
+        }
+}
+.clear {
+    content: ' ';
+  display: table;
+  clear: both;
+}

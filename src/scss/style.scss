@@ -4,18 +4,8 @@
 
 @import 'mixins/mixins.scss';
 
-//----------------------------------*\
-// CONFIG MODULES
-//----------------------------------*/
-
-// Config modules
-//@import 'modules/_vars.scss';
-@import 'modules/_clearfix.scss';
-//@import 'modules/_defaults.scss';
-//@import 'modules/_normalize.scss';
-//----------------------------------*\
-// PARTIALS
-//----------------------------------*/
+@import 'modules/_normalize.scss';
+@import 'partials/_header.scss';
 @import 'partials/_main.scss';
 @import 'partials/_welcome.scss';
 @import 'partials/_services.scss';
@@ -27,19 +17,5 @@
 @import 'partials/_getInTouch.scss';
 @import 'partials/_footer.scss';
 
-
-//----------------------------------*\
-// OBJECTS & MODULES
-//----------------------------------*/
-
 @import 'modules/_typography.scss';
 
-// Enhancement modules
-//@import 'modules/_breakpoints.scss';
-//@import 'modules/_print.scss';
-
-//----------------------------------*\
-// VENDOR
-//----------------------------------*/
-
-//@import 'vendor/_external.scss';

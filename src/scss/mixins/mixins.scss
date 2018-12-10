@@ -1,33 +1,37 @@
 @mixin header {
-        text-align: center;
-        h1 {
+          text-align: center;
           font-size: 40px;
           font-weight: 700;
           text-transform: uppercase;
-        }
+            font-weight: 700;
+            position: relative;
+            margin-bottom: 20px;
   }
 
   @mixin small-header {
-    text-align: center;
-        h1 {
+          text-align: center;
+          position: relative;
           font-size: 25px;
           font-weight: 700;
           text-transform: uppercase;
-        }
+          margin-bottom: 20px;
   }
 
-@mixin header-line($color) {
-        width: 87px;
-        height: 5px;
-        background-color: $color;
-        margin: auto;
-        margin-bottom: 25px;
+  @mixin after-line($color) {
+    h6:after {
+      content: "";  
+     margin: 5px auto;
+     display: block;
+     width: 87px;
+     height: 4px;
+     background-color: $color;
+   }
   }
 
 @mixin header-desc($width) {
         font-size: 18px;
         width: $width;
-        margin: auto;
+        margin: 0 auto;
         text-align: center;
         margin-bottom: 30px;
   }
@@ -35,7 +39,7 @@
   @mixin small-header-desc($width) {
     font-size: 16px;
     width: $width;
-    margin: auto;
+    margin:0 auto;
     text-align: center;
 }
 
@@ -43,24 +47,26 @@
   text-align: center;
   float: left;
   width: 25%;
-  margin: auto;
+  margin:0 auto;
+  box-sizing: border-box;
   img {
     max-height: 125px;
     margin-bottom: 40px;
   }
-  h1 {
+  h6 {
     font-size: 24px;
     color: $color;
     font-weight: 700;
+    margin-bottom: 15px;
   }
-  h2 {
+  span {
     font-size: 16px;
     color: #48c1e9;
+    margin-bottom: 20px;
   }
   p {
     font-size: 18px;
     font-weight: 300;
-    padding: 0 10%;
   }
 }
 
@@ -69,7 +75,7 @@
   height: 0px;
   border: $radius solid $color;
   border-radius: $radius;
-  margin: auto;
+  margin:0 auto;
   position: relative;
 }
 
@@ -160,8 +166,11 @@
   border: none;
   box-shadow: 0px 5px $color2;
   cursor: pointer;
-  margin: auto;
+  margin:0 auto;
   font-weight: 600;
+  &:hover {
+    filter: grayscale(30%);
+  }
   &:active {
     box-shadow: 0 2px $color2;
     transform: translateY(4px);
@@ -179,8 +188,11 @@
   border: none;
   box-shadow: 0px 5px $color2;
   cursor: pointer;
-  margin: auto;
+  margin:0 auto;
   font-weight: 600;
+  &:hover {
+    filter: grayscale(30%);
+  }
   &:active {
     box-shadow: 0 2px $color2;
     transform: translateY(4px);

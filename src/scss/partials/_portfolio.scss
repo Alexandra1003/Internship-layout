@@ -5,20 +5,27 @@
   
   .portfolio-header {
       margin-bottom: 40px;
+      @include after-line(#e5c37f);
   }
   
-  .portfolio-line {
-      @include header-line(#e5c37f);
-  }
   .portfolio-panel{
     float: none;
     text-align: center;
-    padding-bottom: 60px;
+    margin-bottom: 60px;
+    border-radius: 5px;
+    ul{
+        li{
+            display: inline-block;
+        }
+    }
     }
 
 .portfolio-content {
+    width: 100%;
     .portfolio-img-wrapper {
         padding: 8px;
+        box-sizing: border-box;
+        margin: 0 auto;
         img {
             display: inline-block;
             margin-bottom: 30px;

@@ -1,6 +1,7 @@
-%clear {
+/* %clear {
   content: ' ';
   display: table;
+  clear: both;
 }
 .clear {
   *zoom: 1;
@@ -11,4 +12,4 @@
     @extend %clear;
     clear: both;
   }
-}
+} */

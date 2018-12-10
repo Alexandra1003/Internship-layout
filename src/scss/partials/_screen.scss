@@ -148,15 +148,17 @@
      margin-right: 1%;
     }
     }
-
-    ul{
-      li {
-        padding: 20px 30px;
-        .footer-content {
-          font-size: 24px;
-        }
+.footer {
+  ul{
+    li {
+      padding: 20px 30px;
+      .footer-content {
+        font-size: 24px;
       }
     }
+  }
+}
+    
     
     
   }
@@ -323,11 +325,13 @@
     }
 }
 
-ul{
-  li {
-    padding: 20px 20px;
-    .footer-content {
-      font-size: 24px;
+.footer {
+  ul{
+    li {
+      padding: 20px 20px;
+      .footer-content {
+        font-size: 24px;
+      }
     }
   }
 }
@@ -529,6 +533,16 @@ ul{
 }
 .footer {
   padding: 20px 0;
+  ul{
+    li {
+      padding: 10px 5px;
+      .footer-content {
+        font-size: 24px;
+        padding-right: 10px;
+    padding-top: 10px;
+      }
+    }
+  }
   .footer-container {
     padding: 0;
     .footer-wrapper {
@@ -541,16 +555,7 @@ ul{
     }
   }
 }
-ul{
-  li {
-    padding: 10px 5px;
-    .footer-content {
-      font-size: 24px;
-      padding-right: 10px;
-  padding-top: 10px;
-    }
-  }
-}
+
 
   }
   
@@ -753,6 +758,16 @@ ul{
   
   .footer {
     padding: 20px 0;
+    ul{
+      li {
+        padding: 10px 1px;
+        .footer-content {
+          padding-right: 10px;
+    padding-top: 10px;
+    font-size: 18px;
+        }
+      }
+    } 
     .footer-container {
       padding: 0;
       .footer-wrapper {
@@ -766,16 +781,7 @@ ul{
     }
   }
 
-  ul{
-    li {
-      padding: 10px 1px;
-      .footer-content {
-        padding-right: 10px;
-  padding-top: 10px;
-  font-size: 18px;
-      }
-    }
-  } 
+
 
   }  
   

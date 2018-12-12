@@ -8,15 +8,15 @@ function createMenu() {
     var form = document.createElement('form');
     var input = document.createElement("input");
     var h4 = document.createElement("h4");
-    var closeIcon = document.createElement("span");
-    var btnSearch = document.createElement("button");
+    closeIcon = document.createElement("span");
+    btnSearch = document.createElement("button");
     var style = document.createElement("style");
 
     btnSearch.innerText = "Search";
     h4.innerText = "Search node element";
     h4.classList.add("menu-header");
     h4.style.cursor = "pointer";
-    style.innerHTML = `.chosen {outline: 1px solid red}; .form {border-color: #fff;}`;
+    style.innerHTML = '.chosen {outline: 1px solid red}; .form {border-color: #fff;}';
     btnSearch.setAttribute('style', `
             margin-left: 10px;
             padding: 5px;
@@ -36,7 +36,7 @@ function createMenu() {
         
     `);
     input.setAttribute('style', `
-        width: 75%;
+        width: 225px;
         margin-bottom: 10px;
     `);
     closeIcon.setAttribute('style', `
@@ -78,13 +78,13 @@ function createMenu() {
     fragment.appendChild(form);
     body.appendChild(fragment);
 
-    var form = document.querySelector('.form');
-    var closeIcon = document.querySelector('.closeIcon');
+    form = document.querySelector('.form');
+    closeIcon = document.querySelector('.closeIcon');
 
-    var btnPrevious = document.querySelector('.Prev-button');
-    var btnNext = document.querySelector('.Next-button');
-    var btnParent = document.querySelector('.Parent-button');
-    var btnChildren = document.querySelector('.Children-button');
+    btnPrevious = document.querySelector('.Prev-button');
+    btnNext = document.querySelector('.Next-button');
+    btnParent = document.querySelector('.Parent-button');
+    btnChildren = document.querySelector('.Children-button');
 
     form.addEventListener('click', preventDef);
     closeIcon.addEventListener('click', closeForm);
@@ -101,7 +101,7 @@ function preventDef(event) {
 
 function findNode() {
     var input = document.querySelector('.input');
-    var chosenElement = document.querySelector('.chosen');
+    chosenElement = document.querySelector('.chosen');
     if (chosenElement) {
         chosenElement.classList.remove('chosen');
         checkButtons();
@@ -120,12 +120,12 @@ function findNode() {
 }
 
 function checkButtons() {
-    var chosenElement = document.querySelector('.chosen');
-    var btnSearch = document.querySelector('.Search-button');
-    var btnChildren = document.querySelector('.Children-button');
-    var btnParent = document.querySelector('.Parent-button');
-    var btnNext = document.querySelector('.Next-button');
-    var btnPrevious = document.querySelector('.Prev-button');
+    chosenElement = document.querySelector('.chosen');
+    btnSearch = document.querySelector('.Search-button');
+    btnChildren = document.querySelector('.Children-button');
+    btnParent = document.querySelector('.Parent-button');
+    btnNext = document.querySelector('.Next-button');
+    btnPrevious = document.querySelector('.Prev-button');
 
     if (chosenElement) {
         if (chosenElement.children.length) {
@@ -206,6 +206,8 @@ function toParent() {
 function closeForm() {
     form = document.querySelector('.form');
     form.remove();
+    chosenElement = document.querySelector('.chosen');
+    chosenElement.classList.remove('chosen');
 }
 
 createMenu();

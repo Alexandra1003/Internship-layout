@@ -215,7 +215,9 @@ function closeForm() {
     form = document.querySelector('.form');
     form.remove();
     chosenElement = document.querySelector('.chosen');
-    chosenElement.classList.remove('chosen');
+    if(chosenElement) {
+      chosenElement.classList.remove('chosen');
+    }
 }
 
 createMenu();
